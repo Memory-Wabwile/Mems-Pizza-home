@@ -5,3 +5,8 @@ body{
     height:fit-content;
     color: white;
 }
+.underline{
+    text-decoration:  underline rgb(240, 8, 8);
+    text-decoration-thickness:6px;
+    text-underline-offset: 16px;
+}
