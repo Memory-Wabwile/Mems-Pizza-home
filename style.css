@@ -1,4 +1,6 @@
 body{
     background-image: url("images/dark2.jpg");
-    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:fit-content;
 }
