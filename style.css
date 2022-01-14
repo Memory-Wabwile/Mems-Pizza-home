@@ -10,4 +10,26 @@ body{
     text-decoration-thickness:6px;
     text-underline-offset: 16px;
 }
+#inputName,
+#inputEmail,
+#inputMessage{
+  border: 1px solid white;
+  background: gray;
+  color: white;
+  height: 7vh;
+  font-size: 1.5em;
+}
+#inputName::placeholder,
+#inputEmail::placeholder,
+#inputMessage::placeholder {
+  color: white;
+}
+
+#inputMessage {
+  height: 26vh;
+  padding-top: 3%;
+  padding-bottom: 23%;
+  
+}
+
 
