@@ -23,7 +23,7 @@
     <div class="text-center ">
         <form class="text-center">
             <div class="col-md-8 form-group ">
-                <select class="form-select" id="select">
+                <select class="form-select" id="type">
                     <option selected>select the type of pizza</option>
                     <option value="pepperoni">Pepperoni</option>
                     <option value="Boerewors">Boerewors</option>
@@ -37,16 +37,16 @@
             </div>
 
             <div class="col-md-8 form-group">
-                <select class="form-select" id="select">
+                <select class="form-select" id="size">
                     <option selected>Choose the size of pizza</option>
-                    <option value="Small">Small</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Large">Large</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
                 </select>
             </div>
 
             <div class="col-md-8 form-group">
-                <select class="form-select" id="select">
+                <select class="form-select" id="crust">
                     <option selected>Choose the crust of your choice</option>
                     <option value="crispy">Crispy @Ksh.100</option>
                     <option value="stuffed">Stuffed @Ksh.150</option>
@@ -54,8 +54,8 @@
                 </select>
             </div>
 
-            <div class="col-md-8 form-group">
-                <select class="form-select" id="select">
+            <div class="col-md-8 form-group" style="color: white;" id="toppings">
+                <!-- <select class="form-select" id="select">
                     <option selected> Choose the toppings of your choice</option>
                     <option value="1">Sausage for small pizza @Ksh. 50</option>
                     <option value="2">Mushroom for small pizza @Ksh. 50</option>
@@ -69,7 +69,26 @@
                     <option value="2">Mushroom for large pizza @Ksh. 150</option>
                     <option value="3">Gorgonzola for large pizza @Ksh. 150</option>
 
-                </select>
+                </select> -->
+                <p>Choose toppings of your choice</p>
+                <input type="radio" id="deliver" name="sausage" >
+                <label for="deliverr">Sausage for small pizza @Ksh. 50</label><br>
+                <input type="radio" id="" name="mushroom" value="">
+                <label for="deliverr">Mushroom for small pizza @Ksh. 50</label><br>
+                <input type="radio" id="" name="gorgo" value="">
+                <label for="deliverr">Gorgonzola for small pizza @Ksh. 50</label><br>
+                <input type="radio" id="deliver" name="sausage1" >
+                <label for="deliverr">Sausage for medium pizza @Ksh. 100</label><br>
+                 <input type="radio" id="deliver" name="mushroom1" >
+                <label for="deliverr">Mushroom for medium pizza @Ksh. 100</label><br> 
+                <input type="radio" id="deliver" name="gorgo1" >
+                <label for="deliverr">Gorgonzola for medium pizza @Ksh. 100</label><br> 
+                <input type="radio" id="deliver" name="sausage2" >
+                <label for="deliverr">Sausage for large pizza @Ksh. 150</label><br>
+                 <input type="radio" id="deliver" name="mushroom2" >
+                <label for="deliverr">Mushroom for large pizza @Ksh. 150</label><br> 
+                <input type="radio" id="deliver" name="gorgo2" >
+                <label for="deliverr">Gorgonzola for large pizza @Ksh. 150</label><br> 
             </div>
             <div class="my-3" id="number" style="color: white;">
 

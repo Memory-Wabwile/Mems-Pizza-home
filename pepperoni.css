@@ -1,19 +1,21 @@
 body{
     background-image: url("images/pizzabg.jpg");
     background-size: contain;
-    b
+    background-size: 100% 150vh;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: auto;
     width: 98%;
 }
 
 
 form{
-height: 70vh;
-padding: 10% 20% 20% 30%;
+height: vh;
+padding: 1% 10% 20% 30%;
 }
 
-#select{
+#type,
+#size,
+#crust{
     height: 5vh;
     width: 100%;
     font-size: 1em;
