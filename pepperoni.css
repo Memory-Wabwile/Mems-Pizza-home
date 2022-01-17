@@ -8,3 +8,20 @@ body{
 }
 
 
+form{
+height: 70vh;
+padding: 10% 20% 20% 30%;
+}
+
+#select{
+    height: 5vh;
+    width: 100%;
+    font-size: 1em;
+    margin: 2%;
+}
+#myNavbar{
+    color: white;
+}
+#Home{
+    color:white;
+}

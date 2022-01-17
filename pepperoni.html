@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="pepperoni.css">
     <title>pepperoni pizza</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse bg-dark">
+        <div class="container-fluid" id="Home">
+            <div class="navbar-header">
+                <h1>Mems Pizza home</h1>
+            </div>
+           
+        </div>
+    </nav>
     <div class="text-center ">
-        <form class="col-sm-6 offset-sm-3 text-center">
-            <div class="col-md-8 form-group " >
-                <select class="form-select" aria-label="Default select example">
+        <form class="text-center">
+            <div class="col-md-8 form-group ">
+                <select class="form-select" id="select">
                     <option selected>select the type of pizza</option>
                     <option value="pepperoni">Pepperoni</option>
                     <option value="Boerewors">Boerewors</option>
@@ -27,7 +37,7 @@
             </div>
 
             <div class="col-md-8 form-group">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="select">
                     <option selected>Choose the size of pizza</option>
                     <option value="Small">Small</option>
                     <option value="Medium">Medium</option>
@@ -36,17 +46,18 @@
             </div>
 
             <div class="col-md-8 form-group">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="select">
                     <option selected>Choose the crust of your choice</option>
-                    <option value="1">Crispy @Ksh.100</option>
-                    <option value="2">Stuffed @Ksh.150</option>
-                    <option value="3">Glutten-free @Ksh.200</option>
+                    <option value="crispy">Crispy @Ksh.100</option>
+                    <option value="stuffed">Stuffed @Ksh.150</option>
+                    <option value="gluten">Glutten-free @Ksh.200</option>
                 </select>
             </div>
 
-            <div class="col-md-8 form-group" >
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Sausage for small pizza @Ksh. 50</option>
+            <div class="col-md-8 form-group">
+                <select class="form-select" id="select">
+                    <option selected> Choose the toppings of your choice</option>
+                    <option value="1">Sausage for small pizza @Ksh. 50</option>
                     <option value="2">Mushroom for small pizza @Ksh. 50</option>
                     <option value="3">Gorgonzola for small pizza @Ksh. 50</option>
                     <option value="1"></option>
@@ -60,12 +71,64 @@
 
                 </select>
             </div>
+            <div class="my-3" id="number" style="color: white;" >
+                <label >Number of pizzas</label>
+                <input type="number"  min="1" max="100">
+            </div>
+            <a href="#">
+                <button type="submit" class="btn btn-danger">Place an order</button>
+            </a>
         </form>
 
-        <a href="#">
-            <button type="submit" class="btn btn-success checkout" id="checkout">Add to cart</button>
-        </a>
     </div>
+
+    <footer class="bg-dark text-white text-center text-lg-start">
+
+        <div class="container p-4">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <p>
+                        Thank you for choosing MEMS PIZZA HOME ! Looking forward to serving you again.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Navigation</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="index.html" class="text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="#About" class="text-white">About us</a>
+                        </li>
+                        <li>
+                            <a href="#Menu" class="text-white">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#Contact" class="text-white">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">memorywabwile@gmail.com</a>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
