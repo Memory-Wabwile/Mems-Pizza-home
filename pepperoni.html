@@ -17,7 +17,7 @@
             <div class="navbar-header">
                 <h1>Mems Pizza home</h1>
             </div>
-           
+
         </div>
     </nav>
     <div class="text-center ">
@@ -71,10 +71,20 @@
 
                 </select>
             </div>
-            <div class="my-3" id="number" style="color: white;" >
-                <label >Number of pizzas</label>
-                <input type="number"  min="1" max="100">
+            <div class="my-3" id="number" style="color: white;">
+
+                <label>Number of pizzas</label>
+                <input type="number" min="1" max="100">
             </div>
+            <div style="color: white;">
+                <p>Would you like your pizza to be delivered?</p>
+                <input type="radio" id="deliver" name="delivery" value="" onclick="fcn()">
+                <label for="deliverr">Yes</label><br>
+                <input type="radio" id="" name="delivery" value="">
+                <label for="deliverr">No</label><br><br>
+            </div>
+
+           
             <a href="#">
                 <button type="submit" class="btn btn-danger">Place an order</button>
             </a>
