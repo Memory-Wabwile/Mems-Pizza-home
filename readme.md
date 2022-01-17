@@ -13,9 +13,9 @@ https://github.com/Memory-Wabwile
 
 ## Design
 Landing page design for Mems pizza home
-<img src="images/screen1.png" alt="">
-<img src="images/screen2.png" alt="">
-<img src="images/screen3.png" alt=""><br>
+<img src="images/screen11.jpeg" alt="">
+<img src="images/screen22.jpeg" alt="">
+<img src="images/screen33.jpeg" alt=""><br>
 
 ## Setup/Installation Requirements
 * click on https://github.com/Memory-Wabwile/delani-studio.git to clone this repository.
