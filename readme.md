@@ -1,8 +1,8 @@
 # Mems pizza home
- Mems pizza home is a site for ordering pizza online and have it delivered at your home.
+ Mems pizza home is a site for ordering pizza online and choose whether you want it delivered or not.
 
 ## Live site 
-https://memory-wabwile.github.io/delani-studio/
+https://memory-wabwile.github.io/Mems-Pizza-home/
 
 ## Author 
 Wabwile Memory
@@ -18,7 +18,7 @@ Landing page design for Mems pizza home
 <img src="images/screen33.jpeg" alt=""><br>
 
 ## Setup/Installation Requirements
-* click on https://github.com/Memory-Wabwile/delani-studio.git to clone this repository.
+* click on https://github.com/Memory-Wabwile/Mems-Pizza-home.git to clone this repository.
 * application runs on all browsers
 * This application can run on any software , android , MacOs or windows. it only needs installation which can be done from playstore appstore or any browser
 
