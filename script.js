@@ -1,74 +1,64 @@
-$(document).ready(function(){
-    function fcn(){
-        let deliverr = document.getElementById("deliver");
+function fcn(){
+   
+    let deliverr = document.getElementById("deliver");
+    
+    if(deliverr.checked==false){
+        let delivery = 150;
 
-        if(deliverr.checked==true){
-            let delivery = 150;
-           let location = prompt("Where would you like your pizza delivered?");
-           alert ("You will have your pizza delivered at ${location}");
-        }
-         break 
+       let location = prompt("Where would you like your pizza delivered?");
+       alert (`You will have your pizza delivered at ${location}`);
     }
-});
+     
+}
+// $(document).ready(function(){
+  
+// });
 
-let sizee = ""
-if(small.selected){
+
+  const order = document.querySelector("#button");
+  order.addEventListener("click",function(e){
+      e.preventDefault()
+      console.log("hello world")
+    const size = document.querySelector("#size");
+
+
+let sizee = "";
+  if (size.value == "small") {
     sizee = "small";
-}
-else if (medium.selected){
-    sizee = "medium"
-}
-else if (localStorage.selected){
-    sizee = "large"
-};
+    console.log(sizee);
+  } else if (size.value == "medium") {
+    sizee = "medium";
+    console.log(sizee);
+  } else if (size.value == "large") {
+    sizee = "large";
+    console.log(sizee);
+  }
 
-if(sizee=="small"){
-    $("#size").append("small")
-}
-else if (sizee=="medium"){
-    $("#size").append("medium")
-}
-else if (sizee=="large"){
-    $("#size").append("large")
-}
+const crusts = document.querySelector("#crust");
+let crust = "";
+  if (crusts.value == "crispy") {
+    crust = "crispy";
+    console.log(crust);
+  } else if (crusts.value == "stuffed") {
+    crust = "stuffed";
+    console.log(crust);
+  } else if (crusts.value == "gluten-free") {
+    crust = "gluten-free";
+    console.log(crust);
+  }
+  
+const topping = document.querySelector("#toppings");
 
-let crust=""
-if (Crispy.selected){
-    crust="Crispy";
-}
-else if(Stuffed.selected){
-    crust="Stuffed";
-}
-else if (Gluten-free.selected){
-    crust="Gluten-free";
-}
 
-if(crust=="Crispy"){
-    $("#crust").append("crispy")
-}
-else if(crust=="Stuffed"){
-    $("#crust").append("stuffed")
-}
-else if(crust=="Gluten-free"){
-    $("#crust").append("Gluten-free")
-}
-
-let toppings=""
-if (sausage.checked){
-    toppings="sausage"
-}
-else if (mushroom.checked){
-    toppings="mushroom"
-}
-else if (gorgonzola.checked){
-    toppings="Gorgonzola"
-}
-if(toppings=="sausage"){
-    $("#toppings").append("sausage")
-}
-else if(toppings=="mushroom"){
-    $("#toppings").append("mushroom")
-}
-else if(toppings=="gorgonzola"){
-    $("#toppings").append("gorgonzola")
-}
+  let toppings = "";
+  if (topping.value == "sausage") {
+    toppings = "sausage";
+    console.log(topping);
+  } else if (topping.value == "mushroom") {
+    toppings = "mushroom";
+    console.log(topping);
+  } else if (topping.value == "orgonzola") {
+    toppings = "orgonzola";
+    console.log(topping);
+  }
+  })
