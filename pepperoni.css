@@ -10,14 +10,14 @@ body{
 
 form{
 height: vh;
-padding: 1% 10% 20% 30%;
+padding: 1% 10% 20% 5%;
 }
 
 #type,
 #size,
 #crust{
     height: 5vh;
-    width: 100%;
+    width: 90%;
     font-size: 1em;
     margin: 2%;
 }
@@ -26,4 +26,9 @@ padding: 1% 10% 20% 30%;
 }
 #Home{
     color:white;
+}
+
+#number{
+  
+    
 }

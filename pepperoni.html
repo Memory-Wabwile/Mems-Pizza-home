@@ -20,8 +20,8 @@
 
         </div>
     </nav>
-    <div class="text-center ">
-        <form class="text-center">
+    <div>
+        <form>
             <div class="col-md-8 form-group ">
                 <select class="form-select" id="type">
                     <option selected>select the type of pizza</option>
@@ -71,24 +71,24 @@
 
                 </select> -->
                 <p>Choose toppings of your choice</p>
-                <input type="radio" id="deliver" name="sausage" >
+                <input type="radio" id="" name="sausage">
                 <label for="deliverr">Sausage for small pizza @Ksh. 50</label><br>
                 <input type="radio" id="" name="mushroom" value="">
                 <label for="deliverr">Mushroom for small pizza @Ksh. 50</label><br>
                 <input type="radio" id="" name="gorgo" value="">
                 <label for="deliverr">Gorgonzola for small pizza @Ksh. 50</label><br>
-                <input type="radio" id="deliver" name="sausage1" >
+                <input type="radio" id="" name="sausage1">
                 <label for="deliverr">Sausage for medium pizza @Ksh. 100</label><br>
-                 <input type="radio" id="deliver" name="mushroom1" >
-                <label for="deliverr">Mushroom for medium pizza @Ksh. 100</label><br> 
-                <input type="radio" id="deliver" name="gorgo1" >
-                <label for="deliverr">Gorgonzola for medium pizza @Ksh. 100</label><br> 
-                <input type="radio" id="deliver" name="sausage2" >
+                <input type="radio" id="" name="mushroom1">
+                <label for="deliverr">Mushroom for medium pizza @Ksh. 100</label><br>
+                <input type="radio" id="" name="gorgo1">
+                <label for="deliverr">Gorgonzola for medium pizza @Ksh. 100</label><br>
+                <input type="radio" id="" name="sausage2">
                 <label for="deliverr">Sausage for large pizza @Ksh. 150</label><br>
-                 <input type="radio" id="deliver" name="mushroom2" >
-                <label for="deliverr">Mushroom for large pizza @Ksh. 150</label><br> 
-                <input type="radio" id="deliver" name="gorgo2" >
-                <label for="deliverr">Gorgonzola for large pizza @Ksh. 150</label><br> 
+                <input type="radio" id="" name="mushroom2">
+                <label for="deliverr">Mushroom for large pizza @Ksh. 150</label><br>
+                <input type="radio" id="" name="gorgo2">
+                <label for="deliverr">Gorgonzola for large pizza @Ksh. 150</label><br>
             </div>
             <div class="my-3" id="number" style="color: white;">
 
@@ -103,13 +103,44 @@
                 <label for="deliverr">No</label><br><br>
             </div>
 
-           
+
             <a href="#">
                 <button type="submit" class="btn btn-danger" id="button">Place an order</button>
             </a>
         </form>
 
     </div>
+
+    <div class="card" style="width:auto rem; height: 10rem;">
+        <div class="col-sm-12">
+            <table class="table" style="font-size: 1rem;">
+                <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Topping</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Delivery</th>
+                        <th scope="col" onchange=totalSelectChange()>Total</th>
+                    </tr>
+
+                </thead>
+                <tbody id="pizza">
+                    <tr>
+                        <td id="type"></td>
+                        <td id="size"></td>
+                        <td id="crust"></td>
+                        <td id="toppings"></td>
+                        <td id="number"></td>
+                        <td id="total"></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-danger my-3 " id="buttn" >Complete order</button>
 
     <footer class="bg-dark text-white text-center text-lg-start">
 
